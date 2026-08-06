@@ -1,0 +1,32 @@
+{
+  "name": "easy-train",
+  "private": true,
+  "version": "2.8.0",
+  "description": "Plataforma mobile-first de treinos, evolução, collabs e competições.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server.mjs",
+    "build": "node --env-file-if-exists=.env build.mjs",
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "check": "node check.mjs",
+    "test": "node --test",
+    "sql:build": "node scripts/build-sql.mjs",
+    "sql:check": "node scripts/check-sql.mjs",
+    "qa": "npm run sql:check && npm run check && npm test && npm run build"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fitness",
+    "workout",
+    "gym",
+    "pwa",
+    "javascript",
+    "supabase",
+    "netlify",
+    "postgresql",
+    "mobile-first"
+  ]
+}
