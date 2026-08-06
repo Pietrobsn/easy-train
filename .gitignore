@@ -1,0 +1,17 @@
+dist/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+coverage/
+.netlify/
+.supabase/
+playwright-report/
+test-results/
+*.zip
+*.bak

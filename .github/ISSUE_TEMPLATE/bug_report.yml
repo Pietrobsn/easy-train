@@ -1,0 +1,31 @@
+name: Relatar bug
+description: Informe um problema reproduzível no Easy Train.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: O que aconteceu?
+      description: Explique o comportamento observado e o esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: "1. Entre em...\n2. Toque em...\n3. Veja o erro"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Navegador e aparelho
+      placeholder: Chrome 151, Android 15 / Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Capturas, vídeo ou logs
+      description: Nunca publique senhas, tokens ou dados pessoais.
